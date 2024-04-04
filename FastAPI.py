@@ -49,6 +49,18 @@ async def create_item(item: Item):
     db_connection.commit()
     return {"message": "Item inserido com sucesso"}
 
+@app.put("/items/{item_id}")
+async def update_item(item_id: int, updated_item: Item):
+    query = "UPDATE items SET name = %s, description = %s WHERE ID = %s"
+    values = (updated_item.name, updated_item.description, item_id)
+    db_cursor.execute(query, values)
+    # Verificar se algum registro foi atualizado
+    if db_cursor.rowcount == 0:
+        raise HTTPException(status_code=404, detail="Item não encontrado")
+    db_connection.commit()
+    return {"message": "Item atualizado com sucesso"}
+    
+
 # Rota para deletar dados
 @app.delete("/items/{item_id}")
 async def delete_item(item_id: int):
