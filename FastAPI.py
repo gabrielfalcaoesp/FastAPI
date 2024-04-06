@@ -4,7 +4,7 @@ import mysql.connector
 
 # Criação da conexão com o banco de dados
 db_connection = mysql.connector.connect(
-    host="senai114.mysql.database.azure.com",
+    host="senai114teste.mysql.database.azure.com",
     user="gabriel",
     password="senai114@",
     database="Loja"
