@@ -1,0 +1,75 @@
+/* Estilo para o corpo da página */
+
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    font-family: Nunito-ExtraLight;
+    justify-content: center;
+    background-color: #B1FACA;
+
+    }
+
+    h2 {text-align: center;}
+    
+    /* Estilo para o cabeçalho da página */
+    header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+    
+    /* Estilo para a logo no cabeçalho */
+    logo {
+    width: 100px;
+    height: 100px;
+    }
+    
+    /* Estilo para o formulário de cadastro */
+    form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #B1FACA;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Estilo para o título do formulário */
+    form h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    }
+    
+    /* Estilo para os campos do formulário */
+    form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    
+    /* Estilo para as caixas de texto e seleção */
+    form input,
+    form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    }
+    
+    /* Estilo para o botão de envio */
+    form input[type="submit"] {
+    background-color: #22A073;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    /* Estilo para o botão de envio quando o cursor estiver sobre ele */
+    form input[type="submit"]:hover {
+    background-color: #22A073;
+    }

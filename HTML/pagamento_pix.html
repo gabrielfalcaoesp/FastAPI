@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento por PIX</title>
+    <link rel="stylesheet" href="../CSS/pagamento_pix.css">
+</head>
+
+<body>
+
+      <!-- Adiciona o cabeçalho com a logo da empresa -->  
+      <header>
+        <img src="../Imagens/logo.png" alt="Logo da Empresa" class="logo">
+        <title>Cadastro de Cartão de Crédito</title>
+    </header>
+
+    <h1> Pagamento via PIX </h1>
+  
+    <h2> Escaneie o QR Code ou copie o código abaixo para realizar o pagamento </h2>
+  
+    <!-- QR Code -->
+    <div id="qrCodeContainer"></div>
+  
+    <!-- Código PIX -->
+    <div>
+        <label for="codigoPix">Código PIX:</label><br>
+        <textarea id="codigoPix" rows="4" cols="50" readonly>00020101021226830014br.gov.bcb.pix2561api.pagseguro.com/pix/v2/CE690694-910E-43EF-86FF-A66EB79DC47E27600016BR.COM.PAGSEGURO0136CE690694-910E-43EF-86FF-A66EB79DC47E5204799453039865406177.175802BR5922PAGSEGURO TECNOLOGIA L6009Sao Paulo62070503***63045309</textarea>
+        <button onclick="copiarCodigoPix()">Copiar código</button>
+      </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/qrcode.min.js"></script>
+    <script>
+      // Gerar QR Code
+      var qrCodeContainer = document.getElementById('qrCodeContainer');
+      var codigoPix = "00020101021126160014BR.GOV.BCB.PIX01041XXXXXXXXXXXXXXXX52040000530398654041.005802BR5925Nome%20do%20Benefici%C3%A1rio6008BRASILIA62070503***6304E02A";
+      new QRCode(qrCodeContainer, codigoPix);
+  
+      // Função para copiar o código PIX
+      function copiarCodigoPix() {
+        var codigoPixInput = document.getElementById("codigoPix");
+        codigoPixInput.select();
+        document.execCommand("copy");
+        alert("Código PIX copiado!");
+      }
+    </script>
+  
+  </body>
+  </html>
+  

@@ -1,0 +1,520 @@
+/* body{
+
+  
+  
+    background-color: #e1fdeb;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.875rem;
+    margin: 0px;
+}
+
+
+header {
+
+    background-color: #64C27B; 
+
+
+    display: flex;
+    align-items: center;
+
+
+    height: 6.25rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+nav {
+    width: 100%;
+    height: 100;
+    text-align: center;
+}
+
+
+nav ul {
+
+    list-style: none;
+}	
+
+
+nav li {
+
+    display: inline-block;
+
+    margin-left: 1.25rem;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4375rem;
+    transition: 0.3s linear;
+    letter-spacing: 0;
+    
+}
+
+nav a:hover {
+    letter-spacing: 5px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+    
+.BL{
+width: 25%;
+right: 3.125rem;
+display: flex;
+justify-content: end;
+margin-right: 3.125rem;
+align-items: center;
+height: 100%;
+    }
+    
+.BL img{	
+margin-top: 0.5625rem;
+width: 90%;
+height: 90%;
+}
+
+
+
+main h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+.formulario_completo{
+    margin-top: 50px;
+}
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  form .fomulario_recuperacao {
+    position: relative;
+    width: 21.875rem;
+  }
+  
+  form .fomulario_recuperacao input {
+    height: 50px;
+    width: 100%;
+    padding: 0.625rem 0;
+    color: #333;
+    border: none;
+    border: 0.125rem solid #666;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+  }
+  
+  form .fomulario_recuperacao label {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-size: 1rem;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  form .fomulario_recuperacao input:focus ~ label,
+  form .fomulario_recuperacao input:valid ~ label {
+    top: -0.95rem;
+    font-size: 0.875rem;
+    left: 5px;
+    color: #000;
+  }
+
+  .finalizar{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+  }
+
+  form .entrar a {
+    width: 7.8125rem;
+    display: inline-block;
+    background: #64C27B;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid black;
+  }
+  
+  form .entrar a:hover {
+    background: #64c27bb0;
+    color: #ffffff;
+    border: 0.0625rem solid #333;
+    border: 1px solid black;
+  }
+
+  form .voltar a {
+    width: 7.8125rem;
+    display: inline-block;
+    background: #c23232;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid black;
+  }
+  
+  form .voltar a:hover {
+    background: #ee3434;
+    color: white;
+    border: 0.0625rem solid #333;
+    border: 1px solid black;
+  }
+ */
+@font-face {
+  font-family: 'montserat';
+  src: url(montserrat/MontserratAlternates-Regular.ttf);
+}
+
+ body{
+    background-color: #D7FCE4;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.875rem;
+    margin: 0px;
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+    /* Define a cor de fundo como verde */
+    background-color: #64C27B; /* verde */
+
+    /* Define o layout como flexbox e alinha os itens verticalmente */
+    display: flex;
+    align-items: center;
+
+    /* Define a altura do cabeçalho como 80 pixels */
+    height: 6.25rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+nav {
+    width: 100%;
+    height: 100;
+    text-align: center;
+}
+
+/* Estilo para a lista não ordenada do menu */
+nav ul {
+    /* Remove a estilização padrão da lista */
+    list-style: none;
+}	
+
+/* Estilo para os itens da lista do menu */
+nav li {
+    /* Define o display como inline-block para ficar na mesma linha */
+    display: inline-block;
+
+    /* Define a margem à esquerda como 20 pixels para separar os itens */
+    margin-left: 1.25rem;
+}
+
+/* Estilo para os links do menu */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4375rem;
+    transition: 0.3s linear;
+    letter-spacing: 0;
+    
+}
+
+nav a:hover {
+    letter-spacing: 5px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+    
+.BL{
+width: 25%;
+right: 3.125rem;
+display: flex;
+justify-content: end;
+margin-right: 3.125rem;
+align-items: center;
+height: 100%;
+    }
+    
+/* formatação da imagem de botão de login - Tamanho */
+.BL img{	
+margin-top: 0.5625rem;
+width: 90%;
+height: 90%;
+}
+
+  
+  .caixa {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    margin-top: 3.25rem;
+  }
+
+  .container_formulario{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    height: 750px;
+  
+  }
+
+  .container_logo{
+
+    width: 80px;
+    height: 140px;
+   
+  }
+
+  .container_logo img{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+
+
+  h1{
+    margin-top: 50px;
+    font-family:'montserat', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  h2{
+    font-family:'montserat', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+  }
+  
+  .login-box {
+    margin-top: 25px;
+    width: 25rem;
+    padding: 2.5rem;
+   
+   
+  }
+
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    
+    
+  }
+  
+  .login-box form .user-box {
+    position: relative;
+    margin-bottom: 1.25rem;
+    width: 25rem;
+    
+  }
+  
+  .login-box form .user-box input {
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    border-bottom: 0.125rem solid #666;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .login-box form .user-box input:focus ~ label,
+  .login-box form .user-box input:valid ~ label {
+    top: -0.75rem;
+    font-size: 0.875rem;
+    color: #000;
+  }
+
+
+  .opcoes{
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+  }
+
+  .login-box form .entrar{
+    width: 50%;
+   
+  }
+
+  
+  .entrar a {
+    width: 9rem;
+    display: inline-block;
+    background: RGB(0, 102, 0);
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    border: 2px solid #333;
+  }
+  
+  .entrar a:hover {
+    background: RGB(153, 255, 153);
+    color: #333;
+    border: 2px solid #333;
+  }
+  .entrar a span {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 0.0625rem;
+    background: #333;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .entrar a span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  .voltar a {
+    width: 10rem;
+    display: inline-block;
+    background: RGB(153, 0, 0);
+    color: #ffffff;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    border: 2px solid #333;
+  }
+  
+  .voltar a:hover {
+    background: RGB(255, 102, 102);
+    color: #333;
+    border: 2px solid #333;
+  }
+  .voltar a span {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 0.0625rem;
+    background: #333;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .voltar a span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+  footer{
+    position: fixed;
+    background-color: #64C27B;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    }
+            
+    .contato img {
+     margin-left: 1.5rem;
+    height: 120px;
+     }
+
+footer h1{
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 250;
+font-size: 1.7rem;
+color: #fff;
+margin-bottom: 2.625rem;
+}
+		
+.fdp img{
+margin-right: 1.5rem;
+height: 120px;
+}
+  
+
+  
+
+
+
+
+
+

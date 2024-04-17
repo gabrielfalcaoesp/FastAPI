@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../CSS/cadastrostyle.css">
+</head>
+<body>
+    <!-- Adiciona o cabeçalho com a logo da empresa -->  
+    <header>
+        <img src="../Imagens/logo.png" alt="Logo da Empresa" class="logo">
+    </header>
+
+   <form>
+        <!-- Adiciona um rótulo e uma caixa de texto para o nome -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- Adiciona um rótulo e uma caixa de texto com calendário para a data de nascimento -->
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+    <!-- Adiciona um rótulo e uma caixa de texto para adicionar o RG/RNE -->
+        <label for="rg/rne">RG/RNE</label>
+        <input type="number" id="rg/rne" name="rg/rne" maxlength="9" required><br><br>
+
+    <!-- Adiciona um rótulo e uma caixa de texto para adicionar o CPF -->
+        <label for="cpf">CPF</label>
+        <input type="number" id="cpf" name="cpf" required><br><br>
+
+    <!-- Adiciona um rótulo e uma caixa de texto para o e-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Adiciona um rótulo e uma caixa de texto para o telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+    <!-- Adiciona um rótulo e uma caixa de texto para o CEP-->
+
+        <label for="cep">CEP:</label>
+        <input type="number" id="cep" name="cep" maxlength="8" required><br><br>
+
+     <!-- Adiciona um rótulo e uma caixa de texto para o CEP-->
+     
+        <label for="endereço">Endereço:</label>
+        <input type="text" id="endereço" name="endereço" required><br><br>
+
+    <!-- Adiciona um rótulo e uma caixa de texto para o Número-->
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" maxlength="8" required><br><br>
+
+     <!-- Adiciona um rótulo e uma caixa de texto para a senha e confirmação-->
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" maxlength="20" required>
+
+        <label for="senha">Confirme sua senha:</label>
+        <input type="password" id="senha" name="senha" maxlength="20" required>
+
+    <!-- Adiciona uma caixa de seleção para adicionar um genero-->
+    <div class="generos">
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="feminino"> Feminino
+    </div>
+
+    <!-- Adiciona um botão de envio -->
+       
+        <input type="submit" value="Confirmar">
+        </form>
+
+</body>
+</html>

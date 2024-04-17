@@ -1,0 +1,359 @@
+/* CSS */
+
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url(../Fontes/Montserrat-Bold.ttf) format('opentrue'),
+     url(../Fontes/Montserrat-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Nunito-ExtraLight';
+    src: url(../Fontes/Nunito-ExtraLight.ttf) format('opentrue'),
+     url(../Fontes/Nunito-ExtraLight.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+@font-face{
+    font-family: 'Nunito-Bold';
+    src: url(../Fontes/Nunito-Bold.ttf) format('opentrue'),
+     url(../Fontes/Nunito-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+body{
+    background-color: #B1FACA;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.875rem;
+    margin: 0px;
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+    /* Define a cor de fundo como verde */
+    background-color: #64C27B; /* verde */
+
+    /* Define o layout como flexbox e alinha os itens verticalmente */
+    display: flex;
+    align-items: center;
+
+    /* Define a altura do cabeçalho como 80 pixels */
+    height: 6.25rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+nav {
+    width: 100%;
+    height: 100;
+    text-align: center;
+}
+
+/* Estilo para a lista não ordenada do menu */
+nav ul {
+    /* Remove a estilização padrão da lista */
+    list-style: none;
+}	
+
+/* Estilo para os itens da lista do menu */
+nav li {
+    /* Define o display como inline-block para ficar na mesma linha */
+    display: inline-block;
+
+    /* Define a margem à esquerda como 20 pixels para separar os itens */
+    margin-left: 1.25rem;
+}
+
+/* Estilo para os links do menu */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4375rem;
+    transition: 0.3s linear;
+    letter-spacing: 0;
+    
+}
+
+nav a:hover {
+    letter-spacing: 5px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+    
+.BL{
+width: 25%;
+right: 3.125rem;
+display: flex;
+justify-content: end;
+margin-right: 3.125rem;
+align-items: center;
+height: 100%;
+
+    }
+    
+/* formatação da imagem de botão de login - Tamanho */
+.BL img{	
+margin-top: 0.5625rem;
+width: 90%;
+height: 90%;
+cursor: pointer;
+}
+
+.caixa {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 100px; /* Posição vertical desejada */
+    right: 300px; /* Posição horizontal desejada */
+    height: 100px;
+    width: 200px;
+    display: none;
+    z-index: 9999;
+
+  }
+  
+  .login-box {
+    width: 25rem;
+    height: 26.5625rem;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .logo_login{
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    width: 25rem;
+  }
+  
+  .logo_login img {
+    margin-bottom: 1.25rem;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-box form .user-box {
+    position: relative;
+    margin-bottom: 1.25rem;
+  }
+  
+  .login-box form .user-box input {
+    width: 100%;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    border-bottom: 0.125rem solid #666;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .login-box form .user-box input:focus ~ label,
+  .login-box form .user-box input:valid ~ label {
+    top: -0.75rem;
+    font-size: 0.875rem;
+    color: #000;
+  }
+
+  .opcoes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+  }
+
+  .opcoes1{
+    width: 50%;
+    height: 75px;
+  }
+
+  .opcoes2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    height: 75px;
+  }
+
+  .lembrar label{
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .esqueceu a{
+    margin-left: 0.1875rem;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .opcoes2 a{
+    margin-top: 0px;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    text-align: end;
+  }
+  
+  .login-box form .entrar a {
+    width: 21.875rem;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .login-box form .entrar a:hover {
+    background: #fff;
+    color: #333;
+    border: 0.0625rem solid #333;
+  }
+  .login-box form .entrar a span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.0625rem;
+    background: #333;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .login-box form .entrar a span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+
+
+  footer{
+    background-color: #64C27B;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    }
+            
+    .contato img {
+     margin-left: 1.5rem;
+    height: 120px;
+     }
+
+footer .info{
+text-align: center;
+font-size: 0.8125rem;
+color: #fff;
+}
+		
+.fdp img{
+margin-right: 1.5rem;
+height: 120px;
+}
+
+.imagem-hiper{
+    text-align: center;
+    filter: drop-shadow(0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.25));
+}
+
+main h1{
+    text-align: center;
+    font-family: 'Montserrat-Bold';
+    margin-inline-start: 25%;
+    margin-inline-end: 25%;
+    margin-bottom: 2.5rem;
+}
+
+main h3{
+    text-align: center;
+    font-family: 'Nunito-ExtraLight';
+    margin-inline-start: 25%;
+    margin-inline-end: 25%;
+    font-size: 2rem;
+}
+
+.bloco{
+    background-color: #22A073;
+    text-align: center;
+    align-items: center;
+    display: block;
+    border: 0.0625rem solid #ccc;
+    padding: 0.625rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.25rem;
+    height: 3.75rem;
+    width: 14.3125rem;
+    margin: 3.25rem auto; /* centraliza horizontalmente */
+    line-height: 3.75rem;
+    font-family: 'Nunito-Bold';
+    font-size: 1.125rem;
+}
+
+.agendamento{
+    font-family: 'Nunito-Bold';
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div a{
+    color: white;
+    font-family: 'Nunito-Bold';
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.bloco-centro{
+    font-family: 'Nunito-Bold';
+    font-size: 1.125rem;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: auto; /* centraliza verticalmente */
+    align-items: center;
+}
+

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    background-color: #D7FCE4;
+}
+
+.botoes{
+  margin-top: 25px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.botaoVoltar{
+  margin-left: 3.125rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  transform: rotate(270deg);
+
+}
+
+.botaoVoltar svg{
+  width: 100%;
+  height: 100%;
+}
+
+.botaoCancelar{
+  margin-right: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
+
+}
+
+.agendamento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 200px
+}
+
+
+select {
+  margin-top: 50px;
+  width: 50%;
+  height: 60px;
+  padding: 5px;
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: #D7FCE4;
+  font-size: 20px;
+}
+
+option{
+  background-color: #D7FCE4;
+}
+
+.containerAvancar{
+  margin-top: 10.9375rem;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+}
+
+.botaoAvancar{
+  margin-right: 3.125rem;
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(90deg);
+    
+}
+

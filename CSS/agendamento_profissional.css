@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    background-color: #D7FCE4;
+}
+
+.botoes{
+  margin-top: 25px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.botaoVoltar{
+  margin-left: 3.125rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  transform: rotate(270deg);
+}
+
+.botaoVoltar svg{
+  width: 100%;
+  height: 100%;
+}
+
+.botaoCancelar{
+    top: 85vh; /* Define a posição superior (85% da altura da janela) */
+    right: 4vh; /* Define a posição direita (10% da altura da janela) */
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 3.125rem
+}
+
+
+
+
+
+
+    
+    .parent {
+        margin-top: 4.5rem;
+        width: 62.5rem;
+        height: 12.5rem;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border: 2px solid #4CAF50;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #888888;
+        }
+
+        .parent2 {
+            margin-top: 6.5rem;
+            width: 62.5rem;
+            height: 12.5rem;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            border: 2px solid #4CAF50;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #888888;
+            }
+        
+        .foto {
+             grid-area: 1 / 1 / 3 / 3;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            
+            }
+
+        .foto img{
+            width: 9.375rem;
+            height: 9.375rem;
+        }
+
+        .dados { 
+        grid-area: 1 / 3 / 3 / 5;
+        } 
+
+        .horarios {
+            border-left: 1px solid#4CAF50;;
+             grid-area: 1 / 5 / 3 / 8; 
+             justify-content: center;
+             align-items: center;
+             display: flex;
+             flex-wrap: wrap;
+            }
+
+        .nome{
+            display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            height: 33.33%;
+        }
+
+        .especialidade{
+            display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            height: 33.33%;
+        }
+
+        .cnr{
+            display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            height: 33.34%;
+        }
+
+        .hr1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 135px;
+            height: 50px;
+            cursor: pointer;
+        }
+        
+        .caixa.selecionada {
+            background-color: #e4bae0;
+        }
+        
+        .hr2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 135px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .hr3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 135px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .hr4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 135px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .hr5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 135px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .hr6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 135px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .horarios p {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        .caixa{
+        width: 100px;
+        height: 50px;
+        left: 774px;
+        top: 413px;
+        border: 2px solid #000000;
+        border-radius: 60px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+
+.containerAvancar{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+}
+
+.botaoAvancar {
+    top: 85vh; /* Define a posição superior (85% da altura da janela) */
+    right: 4vh; /* Define a posição direita (10% da altura da janela) */
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(90deg);
+}

@@ -1,0 +1,30 @@
+/* Estilo para o corpo da página */
+
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    font-family: Nunito-ExtraLight;
+    justify-content: center;
+    background-color: #B1FACA;
+
+    }
+
+    h1 {text-align: center;}
+    
+    h2 {text-align: center;}
+
+    /* Estilo para o cabeçalho da página */
+    header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+
+     /* Estilo para a logo no cabeçalho */
+     logo {
+        width: 100px;
+        height: 100px;
+        }
+
+    div {text-align: center;}
