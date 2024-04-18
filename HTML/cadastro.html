@@ -13,22 +13,22 @@
         <img src="../Imagens/logo.png" alt="Logo da Empresa" class="logo">
     </header>
 
-   <form>
+   <form action="http://localhost:8000/Clientes" method="POST" enctype="application/json">
         <!-- Adiciona um rótulo e uma caixa de texto para o nome -->
         <label for="nome">Nome completo:</label>
         <input type="text" id="nome" name="nome" required><br><br>
 
         <!-- Adiciona um rótulo e uma caixa de texto com calendário para a data de nascimento -->
-        <label for="data_nascimento">Data de nascimento:</label>
-        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+        <label for="data_de_nascimento">Data de nascimento:</label>
+        <input type="text" id="data_de_nascimento" name="data_de_nascimento" required><br><br>
 
     <!-- Adiciona um rótulo e uma caixa de texto para adicionar o RG/RNE -->
         <label for="rg/rne">RG/RNE</label>
-        <input type="number" id="rg/rne" name="rg/rne" maxlength="9" required><br><br>
+        <input type="text" id="rg/rne" name="rg/rne" maxlength="9" required><br><br>
 
     <!-- Adiciona um rótulo e uma caixa de texto para adicionar o CPF -->
         <label for="cpf">CPF</label>
-        <input type="number" id="cpf" name="cpf" required><br><br>
+        <input type="text" id="cpf" name="cpf" required><br><br>
 
     <!-- Adiciona um rótulo e uma caixa de texto para o e-mail -->
         <label for="email">E-mail:</label>
@@ -41,7 +41,7 @@
     <!-- Adiciona um rótulo e uma caixa de texto para o CEP-->
 
         <label for="cep">CEP:</label>
-        <input type="number" id="cep" name="cep" maxlength="8" required><br><br>
+        <input type="text" id="cep" name="cep" maxlength="8" required><br><br>
 
      <!-- Adiciona um rótulo e uma caixa de texto para o CEP-->
      

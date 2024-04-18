@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Form
 from pydantic import BaseModel
 import mysql.connector
 
@@ -55,38 +55,53 @@ async def get_clientes(id_cliente: int):
 
 #Create de Cliente -- Confirmar nome da tabela, se de fato é "Clientes" e confirmar se a rota também ficará como /Clientes 
 @app.post("/Clientes/")
-async def create_cliente(cliente: Cliente):
+async def create_cliente(
+    nome: str = Form(...),
+    data_de_nascimento: str = Form(...),
+    rg: str = Form(...),
+    cpf: str = Form(...),
+    email: str = Form(...),
+    telefone: str = Form(...),
+    cep: str = Form(...),
+    estado: str = Form(...),
+    cidade: str = Form(...),
+    bairro: str = Form(...),
+    endereco: str = Form(...),
+    numero: str = Form(...),
+    senha: str = Form(...),
+    genero: str = Form(...)
+):
     query = "INSERT INTO Clientes (nome, data_de_nascimento, rg, cpf, email, telefone, cep, estado, cidade, bairro, endereco, numero, senha, genero) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    values = (cliente.nome, cliente.data_de_nascimento, cliente.rg, cliente.cpf, cliente.email, cliente.telefone, cliente.cep, cliente.estado, cliente.cidade, cliente.bairro, cliente.endereco, cliente.numero, cliente.senha, cliente.genero)
+    values = (nome, data_de_nascimento, rg, cpf, email, telefone, cep, estado, cidade, bairro, endereco, numero, senha, genero)
     db_cursor.execute(query, values)
     db_connection.commit()
-    return {"message": "Item inserido com sucesso"}
+    return {"message": "Cliente inserido com sucesso"}
 
 #Fazer alteração 
-@app.put("/items/{item_id}")
-async def update_item(item_id: int, updated_item: Item):
-    query = "UPDATE items SET name = %s, description = %s WHERE ID = %s"
-    values = (updated_item.name, updated_item.description, item_id)
+@app.put("/Clientes/{cliente_id}")
+async def update_cliente(cliente_id: int, updated_cliente: Cliente):
+    query = "UPDATE Clientes SET nome = %s, data_de_nascimento = %s, rg = %s, cpf = %s, email = %s, telefone = %s, cep = %s, estado = %s, cidade = %s, bairro = %s, endereco = %s, numero = %s, senha = %s, genero = %s WHERE ID = %s"
+    values = (updated_cliente.nome, updated_cliente.data_de_nascimento, updated_cliente.rg, updated_cliente.cpf, updated_cliente.email, updated_cliente.telefone, updated_cliente.cep, updated_cliente.estado, updated_cliente.cidade, updated_cliente.bairro, updated_cliente.endereco, updated_cliente.numero, updated_cliente.senha, updated_cliente.genero, cliente_id)
     db_cursor.execute(query, values)
     # Verificar se algum registro foi atualizado
     if db_cursor.rowcount == 0:
-        raise HTTPException(status_code=404, detail="Item não encontrado")
+        raise HTTPException(status_code=404, detail="Cliente não encontrado")
     db_connection.commit()
     return {"message": "Item atualizado com sucesso"}
     
 
 #Fazer alteração 
-@app.delete("/items/{item_id}")
-async def delete_item(item_id: int):
-    query = "DELETE FROM items WHERE id = %s"
-    values = (item_id,)
+@app.delete("/Clientes/{cliente_id}")
+async def delete_cliente(cliente_id: int):
+    query = "DELETE FROM Clientes WHERE id = %s"
+    values = (cliente_id,)
     db_cursor.execute(query, values)
     db_connection.commit()
     if db_cursor.rowcount == 0:
-        raise HTTPException(status_code=404, detail="Item não encontrado")
-    return {"message": "Item deletado com sucesso"}
+        raise HTTPException(status_code=404, detail="Cliente não encontrado")
+    return {"message": "Cliente deletado com sucesso"}
 
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.2", port=8000)
